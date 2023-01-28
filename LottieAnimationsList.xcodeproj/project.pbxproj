@@ -11,6 +11,11 @@
 		CA7FCAEF29856D7000634F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCAEE29856D7000634F6C /* Assets.xcassets */; };
 		CA7FCAF229856D7000634F6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCAF129856D7000634F6C /* Preview Assets.xcassets */; };
 		CA7FCAFD2985702300634F6C /* AnimationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FCAFC2985702300634F6C /* AnimationListView.swift */; };
+		CA7FCB002985739100634F6C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CA7FCAFF2985739100634F6C /* Lottie */; };
+		CA7FCB02298573A700634F6C /* LottieVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FCB01298573A700634F6C /* LottieVIew.swift */; };
+		CA7FCB05298573D700634F6C /* 14592-loader-cat.json in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCB04298573D700634F6C /* 14592-loader-cat.json */; };
+		CA7FCB07298573E300634F6C /* 125009-gibli-tribute.json in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCB06298573E300634F6C /* 125009-gibli-tribute.json */; };
+		CA7FCB09298573EB00634F6C /* 91651-hamster-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCB08298573EB00634F6C /* 91651-hamster-loader.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		CA7FCAEE29856D7000634F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA7FCAF129856D7000634F6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA7FCAFC2985702300634F6C /* AnimationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListView.swift; sourceTree = "<group>"; };
+		CA7FCB01298573A700634F6C /* LottieVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieVIew.swift; sourceTree = "<group>"; };
+		CA7FCB04298573D700634F6C /* 14592-loader-cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "14592-loader-cat.json"; path = "../../../../../Downloads/14592-loader-cat.json"; sourceTree = "<group>"; };
+		CA7FCB06298573E300634F6C /* 125009-gibli-tribute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "125009-gibli-tribute.json"; path = "../../../../../Downloads/125009-gibli-tribute.json"; sourceTree = "<group>"; };
+		CA7FCB08298573EB00634F6C /* 91651-hamster-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "91651-hamster-loader.json"; path = "../../../../../Downloads/91651-hamster-loader.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7FCB002985739100634F6C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				CA7FCAEA29856D6D00634F6C /* LottieAnimationsListApp.swift */,
+				CA7FCB03298573AE00634F6C /* Animations */,
 				CA7FCAF829856FD800634F6C /* Model */,
 				CA7FCAFB29856FFA00634F6C /* Views */,
 				CA7FCAEE29856D7000634F6C /* Assets.xcassets */,
@@ -79,8 +90,19 @@
 			isa = PBXGroup;
 			children = (
 				CA7FCAFC2985702300634F6C /* AnimationListView.swift */,
+				CA7FCB01298573A700634F6C /* LottieVIew.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CA7FCB03298573AE00634F6C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				CA7FCB06298573E300634F6C /* 125009-gibli-tribute.json */,
+				CA7FCB08298573EB00634F6C /* 91651-hamster-loader.json */,
+				CA7FCB04298573D700634F6C /* 14592-loader-cat.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +121,9 @@
 			dependencies = (
 			);
 			name = LottieAnimationsList;
+			packageProductDependencies = (
+				CA7FCAFF2985739100634F6C /* Lottie */,
+			);
 			productName = LottieAnimationsList;
 			productReference = CA7FCAE729856D6D00634F6C /* LottieAnimationsList.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +152,9 @@
 				Base,
 			);
 			mainGroup = CA7FCADE29856D6D00634F6C;
+			packageReferences = (
+				CA7FCAFE2985739100634F6C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = CA7FCAE829856D6D00634F6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7FCAF229856D7000634F6C /* Preview Assets.xcassets in Resources */,
+				CA7FCB05298573D700634F6C /* 14592-loader-cat.json in Resources */,
+				CA7FCB07298573E300634F6C /* 125009-gibli-tribute.json in Resources */,
+				CA7FCB09298573EB00634F6C /* 91651-hamster-loader.json in Resources */,
 				CA7FCAEF29856D7000634F6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7FCAEB29856D6D00634F6C /* LottieAnimationsListApp.swift in Sources */,
+				CA7FCB02298573A700634F6C /* LottieVIew.swift in Sources */,
 				CA7FCAFD2985702300634F6C /* AnimationListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA7FCAFE2985739100634F6C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA7FCAFF2985739100634F6C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA7FCAFE2985739100634F6C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA7FCADF29856D6D00634F6C /* Project object */;
 }

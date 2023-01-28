@@ -12,10 +12,11 @@
 		CA7FCAF229856D7000634F6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCAF129856D7000634F6C /* Preview Assets.xcassets */; };
 		CA7FCAFD2985702300634F6C /* AnimationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FCAFC2985702300634F6C /* AnimationListView.swift */; };
 		CA7FCB002985739100634F6C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CA7FCAFF2985739100634F6C /* Lottie */; };
-		CA7FCB02298573A700634F6C /* LottieVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FCB01298573A700634F6C /* LottieVIew.swift */; };
+		CA7FCB02298573A700634F6C /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FCB01298573A700634F6C /* LottieView.swift */; };
 		CA7FCB05298573D700634F6C /* 14592-loader-cat.json in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCB04298573D700634F6C /* 14592-loader-cat.json */; };
 		CA7FCB07298573E300634F6C /* 125009-gibli-tribute.json in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCB06298573E300634F6C /* 125009-gibli-tribute.json */; };
 		CA7FCB09298573EB00634F6C /* 91651-hamster-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CA7FCB08298573EB00634F6C /* 91651-hamster-loader.json */; };
+		CA7FCB0E2985745800634F6C /* FavourtieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FCB0D2985745800634F6C /* FavourtieAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +25,11 @@
 		CA7FCAEE29856D7000634F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA7FCAF129856D7000634F6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA7FCAFC2985702300634F6C /* AnimationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListView.swift; sourceTree = "<group>"; };
-		CA7FCB01298573A700634F6C /* LottieVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieVIew.swift; sourceTree = "<group>"; };
+		CA7FCB01298573A700634F6C /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		CA7FCB04298573D700634F6C /* 14592-loader-cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "14592-loader-cat.json"; path = "../../../../../Downloads/14592-loader-cat.json"; sourceTree = "<group>"; };
 		CA7FCB06298573E300634F6C /* 125009-gibli-tribute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "125009-gibli-tribute.json"; path = "../../../../../Downloads/125009-gibli-tribute.json"; sourceTree = "<group>"; };
 		CA7FCB08298573EB00634F6C /* 91651-hamster-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "91651-hamster-loader.json"; path = "../../../../../Downloads/91651-hamster-loader.json"; sourceTree = "<group>"; };
+		CA7FCB0D2985745800634F6C /* FavourtieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavourtieAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		CA7FCAF829856FD800634F6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CA7FCB0D2985745800634F6C /* FavourtieAnimation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				CA7FCAFC2985702300634F6C /* AnimationListView.swift */,
-				CA7FCB01298573A700634F6C /* LottieVIew.swift */,
+				CA7FCB01298573A700634F6C /* LottieView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,8 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7FCB0E2985745800634F6C /* FavourtieAnimation.swift in Sources */,
 				CA7FCAEB29856D6D00634F6C /* LottieAnimationsListApp.swift in Sources */,
-				CA7FCB02298573A700634F6C /* LottieVIew.swift in Sources */,
+				CA7FCB02298573A700634F6C /* LottieView.swift in Sources */,
 				CA7FCAFD2985702300634F6C /* AnimationListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

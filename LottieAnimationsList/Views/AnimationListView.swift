@@ -9,12 +9,24 @@ import SwiftUI
 
 struct AnimationListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(favourites) { favourite in
+            
+            NavigationLink {
+                LottieView(animationNamed: favourite.fileName)
+            } label: {
+                Text(favourite.description)
+            }
+
+            
+        }
+        .navigationTitle("Useful Animations")
     }
 }
 
 struct AnimationListView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimationListView()
+        NavigationView {
+            AnimationListView()
+        }
     }
 }

@@ -13,6 +13,7 @@ struct AnimationListView: View {
             
             NavigationLink {
                 LottieView(animationNamed: favourite.fileName)
+                    .navigationTitle(favourite.description)
             } label: {
                 Text(favourite.description)
             }
